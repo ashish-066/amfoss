@@ -1,0 +1,74 @@
+:root {
+  --bg: #f6f8fb;
+  --fg: #0b1220;
+  --card: #fff;
+  --muted: #6b7280;
+}
+
+[data-dark="true"] {
+  --bg: #0b1220;
+  --fg: #f6f8fb;
+  --card: #1f2937;
+  --muted: #9ca3af;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background: var(--card);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: var(--fg);
+  color: var(--bg);
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+canvas {
+  border: 2px solid var(--muted);
+  border-radius: 12px;
+  background: var(--card);
+  margin-top: 20px;
+  cursor: crosshair;
+}
+
+.scoreboard {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.message {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 16px;
+}

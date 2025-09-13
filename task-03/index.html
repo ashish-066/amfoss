@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Game</title>
+  <link rel="stylesheet" href="styling.css">
+</head>
+<body data-dark="false">
+  <header>
+    <div class="controls">
+      <button onclick="setDifficulty('easy')">Easy</button>
+      <button onclick="setDifficulty('medium')">Medium</button>
+      <button onclick="setDifficulty('hard')">Hard</button>
+      <button onclick="clearCanvas()">Clear</button>
+    </div>
+    <div class="controls">
+      <button onclick="toggleDark()">Toggle</button>
+    </div>
+  </header>
+
+  <canvas id="circle" width="400" height="400"></canvas>
+
+  <div class="scoreboard">
+    Score: <span id="score">0%</span> | HighScore: <span id="bestScore">0%</span>
+  </div>
+  <div class="message" id="message"></div>
+
+  <audio id="drawSound" src="pixelate-pixelated-dreams-313358.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
