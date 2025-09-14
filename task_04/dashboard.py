@@ -36,7 +36,7 @@ class Dashboard(QWidget):
         self.column_buttons_add = {}
 
         self.init_ui()
-        self.load_default_data() 
+        self.load_default_data()
 
     def init_ui(self):
         main_layout = QVBoxLayout()
@@ -230,9 +230,9 @@ class Dashboard(QWidget):
             return
 
         rows = self.cursor.fetchall()
-        self.populate_table(rows)
+        self.show_results(rows)
 
-    def populate_table(self, rows):
+    def show_results(self, rows):
         col_map = {
             "id": 0, "title": 1, "Released_Year": 2,
             "Genre": 3, "IMDB_Rating": 4,
@@ -275,12 +275,12 @@ class Dashboard(QWidget):
                 writer.writerow(row_data)
 
         self.output_console.append(f" Data exported to {path}")
+
     def load_default_data(self):
-        """Load all movies on dashboard startup."""
         try:
             self.cursor.execute("SELECT * FROM movies")
             rows = self.cursor.fetchall()
-            self.populate_table(rows)
+            self.show_results(rows)
         except mysql.connector.Error as e:
             self.output_console.append(f" Database error: {e}")
 
