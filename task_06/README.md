@@ -1,0 +1,3 @@
+To begin with the task, I first learned what a Discord bot is and what it does. After getting a fine understanding, I explored the Discord developers documentation page where I understood about intents, which are basically permissions and there I also found a repository that contained some examples of Discord bots. They helped me get clarity about how to code a bot and everything.
+
+Then, instead of trying to code everything at once, I started small. First, I made the bot come online and print a message (on_ready). Then, I tested welcoming new members (on_member_join). After that, I added moderation logic (on_message). Finally, I built commands (!wisdom, !announcement). At each stage, I ran the bot on my server to check if it worked and debug issues.
