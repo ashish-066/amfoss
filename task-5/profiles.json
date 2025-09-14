@@ -1,0 +1,63 @@
+{
+    "users": [],
+    "ash": {
+        "username": "ash",
+        "score": 0,
+        "high_score": 0,
+        "difficulty": "easy"
+    },
+    "ashish": {
+        "username": "ashish",
+        "score": 0,
+        "high_score": 0,
+        "difficulty": "easy"
+    },
+    "AAD": {
+        "username": "AAD",
+        "score": 0,
+        "high_score": 0,
+        "difficulty": "easy"
+    },
+    "asdf": {
+        "username": "asdf",
+        "score": 10,
+        "high_score": 10,
+        "difficulty": "easy"
+    },
+    "ad": {
+        "username": "ad",
+        "score": 10,
+        "high_score": 10,
+        "difficulty": "easy"
+    },
+    "gfd": {
+        "username": "gfd",
+        "score": 0,
+        "high_score": 0,
+        "difficulty": "easy"
+    },
+    "fd": {
+        "username": "fd",
+        "score": 0,
+        "high_score": 0,
+        "difficulty": "easy"
+    },
+    "ds": {
+        "username": "ds",
+        "score": 0,
+        "high_score": 0,
+        "difficulty": "easy"
+    },
+    "dfg": {
+        "username": "dfg",
+        "score": 0,
+        "high_score": 0,
+        "difficulty": "easy"
+    },
+    "hg": {
+        "username": "hg",
+        "score": 0,
+        "high_score": 0,
+        "difficulty": "easy"
+    }
+}
